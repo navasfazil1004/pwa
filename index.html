@@ -4,32 +4,36 @@
   <meta charset="UTF-8">
   <title>Spotify-Like Player</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1DB954">
-
-  <!-- iOS PWA support -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Spotify Clone">
-  <link rel="apple-touch-icon" href="covers/cover1.jpg">
 </head>
 <body>
-  <div class="app">
-    <h1>🎶 Spotify Clone</h1>
-
-    <div class="album">
+  <div class="player">
+    <!-- Album cover -->
+    <div class="album-art">
       <img id="cover" src="covers/cover1.png" alt="Album Cover">
     </div>
 
-    <h2 id="title">Song 1</h2>
+    <!-- Song info -->
+    <div class="song-info">
+      <h2 id="title">Song Title</h2>
+      <p id="artist">Artist Name</p>
+    </div>
 
-    <audio id="audio" src="songs/song1.mp3"></audio>
+    <!-- Progress bar -->
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" min="0" max="100">
+      <span id="duration">0:00</span>
+    </div>
 
+    <!-- Controls -->
     <div class="controls">
       <button id="prev">⏮</button>
       <button id="play">▶️</button>
       <button id="next">⏭</button>
     </div>
+
+    <!-- Audio -->
+    <audio id="audio" src="songs/song1.mp3"></audio>
   </div>
 
   <script src="script.js"></script>

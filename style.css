@@ -1,45 +1,69 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background: #121212;
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.app {
+.player {
+  width: 350px;
   text-align: center;
-  width: 320px;
 }
 
-.album img {
-  width: 250px;
-  height: 250px;
+.album-art img {
+  width: 100%;
   border-radius: 12px;
-  margin: 20px 0;
-  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
-h1 {
-  color: #1DB954;
+.song-info h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.song-info p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+#progress {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 4px;
+  background: #1DB954;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .controls {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  margin-top: 15px;
 }
 
 button {
   background: #1DB954;
   border: none;
-  color: white;
-  padding: 15px;
   border-radius: 50%;
-  cursor: pointer;
+  padding: 15px;
+  color: white;
   font-size: 18px;
+  cursor: pointer;
 }
 button:hover {
   background: #1aa34a;
