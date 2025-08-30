@@ -1,0 +1,20 @@
+{
+    "name": "PWA iOS Example",
+    "short_name": "PWAiOS",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#42b883",
+    "icons": [
+        {
+            "src": "icons/favico.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/favico.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
