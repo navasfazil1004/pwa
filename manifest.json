@@ -1,20 +1,15 @@
 {
-    "name": "PWA iOS Example",
-    "short_name": "PWAiOS",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#42b883",
-    "icons": [
-        {
-            "src": "icons/favico.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/favico.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "name": "Spotify Clone",
+  "short_name": "Spotify",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1DB954",
+  "icons": [
+    {
+      "src": "covers/cover1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
