@@ -2,29 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PWA iOS Example</title>
-
-  <!-- Required for PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#42b883">
-
-  <!-- iOS-specific -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="PWA iOS">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
-
-  <script>
-    // Register Service Worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('✅ Service Worker registered'))
-        .catch(err => console.log('❌ SW error', err));
-    }
-  </script>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello iOS PWA 👋</h1>
-  <p>You can add this app to your home screen.</p>
+  <div class="player">
+    <h2>🎵 Simple Music Player</h2>
+    <audio id="audio" src="songs/song1.mp3"></audio>
+
+    <div class="controls">
+      <button id="prev">⏮ Prev</button>
+      <button id="play">▶️ Play</button>
+      <button id="next">⏭ Next</button>
+    </div>
+    <p id="track">Now Playing: song1.mp3</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

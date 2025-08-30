@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  text-align: center;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #42b883;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2c8e6e;
+}
